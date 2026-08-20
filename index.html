@@ -25,28 +25,29 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero">
         <picture>
-
+            <h1>As melhores massas você encontra aqui!</h1>
+            
             <!-- Celular -->
             <source
-                media="(max-width: 600px)"
-                srcset="
-                ./assets/img/hero-480.webp 480w,
-                ./assets/img/hero-750.webp 750w"
-                sizes="100vw"
+            media="(max-width: 600px)"
+            srcset="
+            ./assets/img/hero-480.webp 480w,
+            ./assets/img/hero-750.webp 750w"
+            sizes="100vw"
             
             >
-
+            
             <!-- Tablet -->
             <source
-                media="(max-width: 1024px)"
-                
-                srcset="
-                
-                ./assets/img/hero-800.webp 800w,
-                ./assets/img/hero-1200.webp 1200w"
-                sizes="100vw"
+            media="(max-width: 1024px)"
+            
+            srcset="
+            
+            ./assets/img/hero-800.webp 800w,
+            ./assets/img/hero-1200.webp 1200w"
+            sizes="100vw"
             >
 
             <!-- Computador -->
@@ -58,8 +59,8 @@
             sizes="100vw"
             alt="Foto de uma mão com uma massa de pão e outros utensílios de preparo."
             >
+            
         </picture>
-        <h1>As melhores massas você encontra aqui!</h1>
     </section>
 
     <section class="choices-container" id="beneficios">
@@ -144,7 +145,10 @@
     </section>
 
     <footer>
-
+            <a href="#hero" class="top">
+                <i class="fa-solid fa-caret-up"></i>
+            </a>
+        
     </footer>
 </body>
 </html>

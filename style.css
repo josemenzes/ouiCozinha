@@ -18,12 +18,13 @@ body {
 }
 
 header {
-    width: 100%vw;
+    width: 100%;
     min-height: max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: fixed;
+    z-index: 10;
     padding: 2rem 5rem;
     background-image: linear-gradient(to left top, rgb(109, 109, 109) 0, rgb(92, 92, 92) 50%, rgb(68, 68, 68) 100%);
     box-shadow: 3px 3px 20px rgba(49, 49, 49, 0.534);
@@ -31,7 +32,6 @@ header {
 
 nav {
     font-size: 7rem;
-    display: flex;
 }
 
 ul {
@@ -49,13 +49,15 @@ a:hover {
     color: rgb(163, 163, 163);
 }
 
-.hero {
+#hero {
     position: relative;
+    width: 100%;
 }
 
-.hero img {
+#hero img {
     width: 100%;
     filter: brightness(0.6);
+    margin-top: 14rem;
 }
 
 h1 {
@@ -63,6 +65,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
     font-size: clamp(1.5rem, 3.5vw, 5.6rem);
     white-space: nowrap;
@@ -73,6 +76,8 @@ h1 {
     padding-block: clamp(1rem, 2vw, 3rem);
     padding-inline: clamp(2rem, 2vw, 5rem);
     border-radius: 3rem;
+
+    margin-top: 6.5rem;
 }
 
 h2 {
@@ -256,6 +261,13 @@ form {
     color: white;
     font-weight: 500;
     border: none;
+
+    cursor: pointer;
+}
+
+.request-submit:hover {
+    background-color: rgba(84, 173, 91, 0.74);
+
 }
 
 
@@ -264,4 +276,39 @@ footer {
     min-height: 150px;
     background-image: linear-gradient(rgb(65, 62, 59) 0, rgb(58, 55, 51) 50%, rgb(14, 13, 12)100%);
 }
+
+.top {
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+
+   height: 50px;
+   border-radius: 50%;
+   background-image: linear-gradient(to right, rgb(84, 173, 91) 0, rgb(73, 150, 79) 50%, rgb(84, 173, 91) 100%);
+
+   transition: scale 0.2s ease-in-out;
+   scale: 1;
+    
+}
+
+.top:hover {
+    scale: 1.3;
+    background-image: linear-gradient(to right, rgba(84, 173, 91, 0.658) 0, rgb(73, 150, 79) 50%, rgba(84, 173, 91, 0.582) 100%);
+}
+
+.fa-caret-up {
+    
+    
+    display: inline-flex;
+    width: fit-content; 
+    height: max-content;
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
 
