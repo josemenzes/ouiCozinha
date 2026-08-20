@@ -75,7 +75,22 @@ h1 {
     border-radius: 3rem;
 }
 
-.why-choose {
+h2 {
+    white-space: nowrap;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    margin-bottom: 2rem;
+}
+
+
+form {
+    width: 45vw;
+}
+
+.choices-container {
     width: 100%;
     min-height: 300px;
     background-image: linear-gradient(to right, rgb(219, 218, 216) 0, rgb(247, 245, 243) 50%, rgb(247, 245, 243) 100%);
@@ -86,24 +101,14 @@ h1 {
     align-items: center;
 }
 
-h2 {
-    white-space: nowrap;
-    font-size: clamp(2rem, 3vw, 3.5rem);
-}
+
 .choices-grid {
     display: flex;
     gap: 4rem;
     
 }
 
-.choices-grid i {
-    color: rgb(84, 173, 91);
-    font-size: clamp(5rem, 4vw, 7rem);
-    display: inline-flex;
-    width: fit-content;
-}
-
-.choices-grid div {
+.choice {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +123,14 @@ h2 {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.185);
 }
 
-.why-choose p {
+.choices-grid i {
+    color: rgb(84, 173, 91);
+    font-size: clamp(5rem, 4vw, 7rem);
+    display: inline-flex;
+    width: fit-content;
+}
+
+.choices-grid p {
     gap: 10px;
     white-space: nowrap;
     font-size: clamp(2rem, 1.5vw, 2.5rem);
@@ -183,54 +195,68 @@ h2 {
 
 }
 
-form {
-    width: 45vw;
-}
-
-.request-product {
+.request-container {
     display: flex;
     width: 100%;
     min-height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
     margin-bottom: 4rem;
 }
 
-.request-labels {
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.request-section  {
+    height: fit-content;
+    padding: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    border: solid 0.1rem rgba(0, 0, 0, 0.336);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.request-areas {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.request-product input, fieldset, select {
-    height: fit-content;
-    padding: 1rem;
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: 2rem;
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-h3 {
-    font-size: clamp(1.7rem, 3vw, 2.3rem);
-}
-
-
-.request-product fieldset {
+.input-group .request-section {
     display: flex;
     justify-content: center;
-    text-align: center;
-}    
-
-.options label {
-    margin-right: 2rem;
+    /* align-items: center; */
+    align-self: center;
+    width: 100%;
+    gap: 0.5rem;
+    background-image: linear-gradient(to right, rgba(247, 250, 238, 0.705) 0, rgba(250, 253, 241, 0.836) 50%, rgba(247, 250, 238, 0.705) 100%);
 }
 
-.options input, label {
+.input-group label {
+    margin-right: 2rem;
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-
+.request-submit {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    background-color: rgb(84, 173, 91);
+    color: white;
+    font-weight: 500;
+    border: none;
+}
 
 
 footer {

@@ -20,7 +20,7 @@
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#produtos">Sabores</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="peca-ja">Peça já</a></li>
+                <li><a href="#peca-ja">Peça já</a></li>
             </ul>
         </nav>
     </header>
@@ -62,19 +62,19 @@
         <h1>As melhores massas você encontra aqui!</h1>
     </section>
 
-    <section class="why-choose" id="beneficios">
+    <section class="choices-container" id="beneficios">
         <h2>Por que escolher a Oui?</h2>
 
         <div class="choices-grid">
-            <div class="first-choice">
+            <div class="choice first">
                 <i class="fa-solid fa-plate-wheat"></i>
                 <p>Ingredientes frescos</p>
             </div>
-            <div class="second-choice">
+            <div class="choice second">
                 <i class="fa-solid fa-motorcycle"></i>
                 <p>Entrega rápida</p>
             </div>
-            <div class="third-choice">
+            <div class="choice third">
                 <i class="fa-solid fa-face-grin-hearts"></i>
                 <p>Sabor inigualável</p>
             </div>
@@ -103,14 +103,14 @@
         </div>
     </section>
 
-    <section class="request-product" id="peca-ja">
-        <h2>Peça já a sua pizza!</h2>
-        <form action="./js/form-validate.js" method="get" target="self" >
-            <div class="request-labels">
-                <input type="text" placeholder="Nome completo">
-                <input type="tel" placeholder="Telefone">
-                <input type="text" placeholder="Endereço de entrega">
-                <select name="choose-flaver" id="select" >
+    <section class="request-container" id="peca-ja">
+        <h2>Faça já o seu pedido!</h2>
+        <form action="./js/form-validate.js" method="get" target="self" id="form">
+            <div class="request-areas">
+                <input type="text" placeholder="Nome completo" class="request-name request-section">
+                <input type="tel" placeholder="Telefone" class="request -tel request-section">
+                <input type="text" placeholder="Endereço de entrega" class="request-address request-section">
+                <select name="choose-food" id="select" class="request-foods request-section">
                     <option value="default" selected disabled>Selecione uma opção</option>
                     <option value="pao">Pão</option>
                     <option value="esfirra">Esfirra</option>
@@ -120,10 +120,10 @@
             </div>
             
 
-            <h3>Forma de pagamento:</h3>
-            <div class="options">
-                <fieldset>
-                    <input type="radio" name="forma-pagamento" id="dinheiro">
+            <div class="input-group">
+                <h3>Forma de pagamento:</h3>
+                <fieldset class="request-payment request-section">
+                    <input type="radio" name="forma-pagamento" id="dinheiro" class="request-radio">
                     <label for="dinheiro">Dinheiro</label>
                     <input type="radio" name="forma-pagamento" id="cartao">
                     <label for="cartao">Cartão</label>
@@ -131,7 +131,7 @@
                     <label for="pix">PIX</label>
                 </fieldset>
                 <h3>Adicionais:</h3>
-                <fieldset>
+                <fieldset class="request-extra request-section">
                     <input type="checkbox" name="adicionais" id="borda-recheada">
                     <label for="borda-recheada">Borda recheada</label>
                     <input type="checkbox" name="adicionais" id="bebida">
@@ -139,7 +139,7 @@
                 </fieldset>
             </div>
 
-            <input type="submit" value="Enviar pedido">
+            <input type="submit" value="Enviar pedido" class="request-submit request-section">
         </form>
     </section>
 
