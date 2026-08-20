@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c1472217e.js" crossorigin="anonymous"></script>
+    <title>Oui Cozinha</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo-oui.png" alt="logo-do-site">
+        <nav>
+
+            <ul>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#produtos">Sabores</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="peca-ja">Peça já</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <picture>
+
+            <!-- Celular -->
+            <source
+                media="(max-width: 600px)"
+                srcset="
+                ./assets/img/hero-480.webp 480w,
+                ./assets/img/hero-750.webp 750w"
+                sizes="100vw"
+            
+            >
+
+            <!-- Tablet -->
+            <source
+                media="(max-width: 1024px)"
+                
+                srcset="
+                
+                ./assets/img/hero-800.webp 800w,
+                ./assets/img/hero-1200.webp 1200w"
+                sizes="100vw"
+            >
+
+            <!-- Computador -->
+            <img src="./assets/img/hero-1905.webp"
+            srcset="
+            ./assets/img/hero-1200.webp 1200w,
+            ./assets/img/hero-1905.webp 1905w
+            "
+            sizes="100vw"
+            alt="Foto de uma mão com uma massa de pão e outros utensílios de preparo."
+            >
+        </picture>
+        <h1>As melhores massas você encontra aqui!</h1>
+    </section>
+
+    <section class="why-choose" id="beneficios">
+        <h2>Por que escolher a Oui?</h2>
+
+        <div class="choices-grid">
+            <div class="first-choice">
+                <i class="fa-solid fa-plate-wheat"></i>
+                <p>Ingredientes frescos</p>
+            </div>
+            <div class="second-choice">
+                <i class="fa-solid fa-motorcycle"></i>
+                <p>Entrega rápida</p>
+            </div>
+            <div class="third-choice">
+                <i class="fa-solid fa-face-grin-hearts"></i>
+                <p>Sabor inigualável</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flavors" id="produtos">
+        <h2>Nossas delícias</h2>
+
+        <ul>
+            <li>Pães</li>
+            <li>Bolos</li>
+            <li>Doces</li>
+            <li>Esfirras</li>
+            <li>E muito mais</li>
+        </ul>
+    </section>
+
+    <section class="feedback" id="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <img src="cliente.jpg" alt="">
+        <p>"Entrega super rápida, recomendo demais!" - João</p>
+        <div class="buttons">
+            <input type="button" name="previous" id="prev" value="Anterior">
+            <input type="button" name="next" id="next" value="Próximo">
+        </div>
+    </section>
+
+    <section class="request-product" id="peca-ja">
+        <h2>Peça já a sua pizza!</h2>
+        <form action="./js/form-validate.js" method="get" target="self" >
+            <div class="request-labels">
+                <input type="text" placeholder="Nome completo">
+                <input type="tel" placeholder="Telefone">
+                <input type="text" placeholder="Endereço de entrega">
+                <select name="choose-flaver" id="select" >
+                    <option value="default" selected disabled>Selecione uma opção</option>
+                    <option value="pao">Pão</option>
+                    <option value="esfirra">Esfirra</option>
+                    <option value="bolo-chocolate">Bolo de chocolate</option>
+                    <option value="bolo-milho">Bolo de milho</option>
+                </select>
+            </div>
+            
+
+            <h3>Forma de pagamento:</h3>
+            <div class="options">
+                <fieldset>
+                    <input type="radio" name="forma-pagamento" id="dinheiro">
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="forma-pagamento" id="cartao">
+                    <label for="cartao">Cartão</label>
+                    <input type="radio" name="forma-pagamento" id="pix">
+                    <label for="pix">PIX</label>
+                </fieldset>
+                <h3>Adicionais:</h3>
+                <fieldset>
+                    <input type="checkbox" name="adicionais" id="borda-recheada">
+                    <label for="borda-recheada">Borda recheada</label>
+                    <input type="checkbox" name="adicionais" id="bebida">
+                    <label for="bebida">Bebida</label>
+                </fieldset>
+            </div>
+
+            <input type="submit" value="Enviar pedido">
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
