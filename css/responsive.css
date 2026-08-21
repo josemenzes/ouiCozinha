@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media (max-width: 1040px) {
+    .request-payment.request-section {
+        display: none;
+    }
+
+    .request-extra.request-section {
+        display: none;
+    }
+
+    .choose-payment.request-section {
+        display: unset;
+    }
+
+    .choose-drink.request-section {
+        display: unset;
+    }
+
+    
+}

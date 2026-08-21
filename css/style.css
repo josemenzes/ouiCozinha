@@ -8,6 +8,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Poppins';
 }
@@ -104,6 +108,8 @@ form {
     gap: 20px;
     justify-content: center;
     align-items: center;
+
+    scroll-margin-top: 14rem;
 }
 
 
@@ -153,6 +159,8 @@ form {
     gap: 20px;
     justify-content: center;
     align-items: center;
+
+    scroll-margin-top: 14rem;
 }
 
 
@@ -172,13 +180,28 @@ form {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right top, rgba(139, 139, 139, 0.486) 0, rgb(231, 229, 229) 50%, rgba(139, 139, 139, 0.486)100%);
+    padding: 5rem;
+
+    border-bottom: solid 4px rgba(109, 75, 3, 0.884);
+
+    scroll-margin-top: 14rem;
 }
 
 .feedback p {
     white-space: nowrap;
-    font-size: clamp(1.5rem, 1.5vw, 2.3rem);
+    font-size: clamp(1.7rem, 2vw, 2.5rem);
     margin: 0;
     padding: 0;
+    line-height: 1;
+}
+
+.feedback .nome-cliente {
+    background-color: rgba(243, 202, 114, 0.884);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 
 .buttons {
@@ -196,7 +219,8 @@ form {
 }
 
 .buttons input:hover {
-    background-color: rgb(110, 106, 106);
+    background-color: rgb(83, 83, 83);
+    cursor: pointer;
 
 }
 
@@ -209,6 +233,9 @@ form {
     align-items: center;
     gap: 2rem;
     margin-bottom: 4rem;
+    padding: 5rem;
+
+    scroll-margin-top: 14rem;
 }
 
 #form {
@@ -270,11 +297,26 @@ form {
 
 }
 
+.choose-payment.request-section {
+    display: none;
+}
+
+.choose-drink.request-section {
+        display: none;
+}
+
+
 
 footer {
+    display: flex;
     width: 100%;
     min-height: 150px;
     background-image: linear-gradient(rgb(65, 62, 59) 0, rgb(58, 55, 51) 50%, rgb(14, 13, 12)100%);
+}
+
+footer p {
+    color: white;
+    align-self: center;
 }
 
 .top {
@@ -282,11 +324,11 @@ footer {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+    height: 50px;
     width: 50px;
     align-items: center;
     justify-content: center;
 
-   height: 50px;
    border-radius: 50%;
    background-image: linear-gradient(to right, rgb(84, 173, 91) 0, rgb(73, 150, 79) 50%, rgb(84, 173, 91) 100%);
 
@@ -301,14 +343,13 @@ footer {
 }
 
 .fa-caret-up {
-    
-    
-    display: inline-flex;
-    width: fit-content; 
-    height: max-content;
-    font-size: 7rem;
+    display: block;
+    line-height: 1;
+    font-size:6rem;
     color: rgba(255, 255, 255, 0.5);
-
+    transform: translateY(-5px);
 }
+
+
 
 
