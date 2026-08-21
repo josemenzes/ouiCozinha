@@ -309,14 +309,19 @@ form {
 
 footer {
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 150px;
     background-image: linear-gradient(rgb(65, 62, 59) 0, rgb(58, 55, 51) 50%, rgb(14, 13, 12)100%);
+    padding: 2rem;
 }
 
-footer p {
-    color: white;
+.footer-text {
     align-self: center;
+}
+
+.project-name {
+    color: white;
 }
 
 .top {
