@@ -162,7 +162,7 @@ h3 {
 .flavors {
     width: 100%;
     min-height: 200px;
-    background-image: radial-gradient(rgb(235, 225, 211) 0, rgb(221, 212, 198) 50%, rgb(236, 228, 214)100%);
+    background-image: radial-gradient(rgb(243, 236, 226) 0, rgb(230, 222, 210) 50%, rgb(255, 251, 244)100%);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -174,7 +174,7 @@ h3 {
 
 
 .flavors li {
-    background-color: rgba(255, 230, 120, 0.877);
+    background-color: rgba(247, 231, 160, 0.877);
     padding-block: clamp(1rem, 2vw, 1.5rem);
     padding-inline: clamp(2rem, 2vw, 5rem);
     font-size: clamp(2rem, 1.5vw, 2.5rem);
@@ -186,15 +186,15 @@ h3 {
 
 
 .flavors li:hover {
-    background-color: rgba(255, 230, 120, 0.623);
+    background-color: rgb(230, 214, 146);
 }
 
 .flavors .more {
-    background-color: rgba(245, 214, 76, 0.877);
+    background-color: rgba(247, 221, 110, 0.877);
 }
 
 .flavors .more:hover {
-    background-color: rgba(245, 214, 76, 0.521);
+    background-color: rgba(231, 207, 101, 0.877);
 }
 
 .feedback {
