@@ -1,6 +1,39 @@
 @charset "UTF-8";
 
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+.menu {
+        display: none;
+    }
+
+    header {
+        padding: 2rem 2rem 2rem 5rem;
+    }
+    
+    .fa-solid.fa-bars {
+        font-size: 6rem;
+        display: unset;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .flavors, .choices-container {
+        padding: 2rem;
+
+    }
+
+    .top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .choices-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1170px) {
     .request-payment.request-section {
         display: none;
     }
@@ -17,5 +50,7 @@
         display: unset;
     }
 
-    
+    #form {
+        width: 60vw;
+    }
 }

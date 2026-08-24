@@ -36,6 +36,12 @@ header {
 
 nav {
     font-size: 7rem;
+    
+}
+
+.fa-solid.fa-bars {
+    color: white;
+    display: none;
 }
 
 ul {
@@ -86,18 +92,15 @@ h1 {
 
 h2 {
     white-space: nowrap;
-    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 
 h3 {
-    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    font-size: clamp(1.8rem, 4vw, 2.3rem);
     margin-bottom: 2rem;
 }
 
 
-form {
-    width: 45vw;
-}
 
 .choices-container {
     width: 100%;
@@ -116,7 +119,6 @@ form {
 .choices-grid {
     display: flex;
     gap: 4rem;
-    
 }
 
 .choice {
@@ -170,6 +172,7 @@ form {
     padding-inline: clamp(2rem, 2vw, 5rem);
     font-size: clamp(2rem, 1.5vw, 2.5rem);
     border-radius: 3.5rem;
+    text-align: center;
 }
 
 .feedback {
@@ -190,7 +193,7 @@ form {
 
 .feedback p {
     white-space: nowrap;
-    font-size: clamp(1.7rem, 2vw, 2.5rem);
+    font-size: clamp(1.7rem, 2vw, 3rem);
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -200,7 +203,7 @@ form {
     background-color: rgba(243, 202, 114, 0.884);
     padding: 1rem 2rem;
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: clamp(1.7rem, 4vw, 2rem);
     font-weight: 300;
 }
 
@@ -211,7 +214,7 @@ form {
 
 .buttons input {
     color: white;
-    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-size: clamp(1.4rem, 3vw, 2rem);
     background-color: rgb(110, 106, 106);
     border: none;
     padding: 1rem 2rem;
@@ -226,14 +229,13 @@ form {
 
 .request-container {
     display: flex;
-    width: 100%;
     min-height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-bottom: 4rem;
-    padding: 5rem;
+    padding: 4rem;
 
     scroll-margin-top: 14rem;
 }
@@ -242,6 +244,15 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    width: 50vw;
+}
+
+.request-areas {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
 }
 
 .request-section  {
@@ -253,11 +264,7 @@ form {
     border-radius: 0.5rem;
 }
 
-.request-areas {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
+
 
 .input-group {
     display: flex;
@@ -273,12 +280,21 @@ form {
     width: 100%;
     gap: 0.5rem;
     background-image: linear-gradient(to right, rgba(247, 250, 238, 0.705) 0, rgba(250, 253, 241, 0.836) 50%, rgba(247, 250, 238, 0.705) 100%);
+
+    text-align: left;
+
 }
 
 .input-group label {
     margin-right: 2rem;
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
+
+#form option {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    
+}
+
 
 .request-submit {
     align-self: center;
@@ -354,6 +370,7 @@ footer {
     color: rgba(255, 255, 255, 0.5);
     transform: translateY(-5px);
 }
+
 
 
 
