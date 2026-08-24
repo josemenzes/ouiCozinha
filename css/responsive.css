@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 @media (max-width: 768px) {
-.menu {
+    
+    .menu {
         display: none;
     }
 
@@ -9,7 +10,12 @@
         padding: 2rem 2rem 2rem 5rem;
     }
     
-    .fa-solid.fa-bars {
+    .choice, .flavors li {
+        width: 80vw;
+
+    }
+
+    .fa-solid.fa-bars, .fa-solid.fa-circle-left {
         font-size: 6rem;
         display: unset;
     }
@@ -19,7 +25,7 @@
     }
 
     .flavors, .choices-container {
-        padding: 2rem;
+        padding: 4rem;
 
     }
 

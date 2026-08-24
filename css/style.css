@@ -39,7 +39,7 @@ nav {
     
 }
 
-.fa-solid.fa-bars {
+.fa-solid.fa-bars, .fa-solid.fa-circle-left {
     color: white;
     display: none;
 }
@@ -68,6 +68,7 @@ a:hover {
     width: 100%;
     filter: brightness(0.6);
     margin-top: 14rem;
+
 }
 
 h1 {
@@ -104,11 +105,12 @@ h3 {
 
 .choices-container {
     width: 100%;
-    min-height: 300px;
+    min-height: max-content;
+    padding: 5rem;
     background-image: linear-gradient(to right, rgb(219, 218, 216) 0, rgb(247, 245, 243) 50%, rgb(247, 245, 243) 100%);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
 
@@ -134,6 +136,11 @@ h3 {
     border: 0.1px solid  rgba(128, 128, 128, 0.37);
     background-color: white;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.185);
+}
+
+.choice:hover{
+    
+    background-color: rgba(253, 253, 253, 0.267);
 }
 
 .choices-grid i {
@@ -167,12 +174,27 @@ h3 {
 
 
 .flavors li {
-    background-color: rgb(253, 235, 211);
+    background-color: rgba(255, 230, 120, 0.877);
     padding-block: clamp(1rem, 2vw, 1.5rem);
     padding-inline: clamp(2rem, 2vw, 5rem);
     font-size: clamp(2rem, 1.5vw, 2.5rem);
     border-radius: 3.5rem;
     text-align: center;
+    font-weight: 400;
+}
+
+
+
+.flavors li:hover {
+    background-color: rgba(255, 230, 120, 0.623);
+}
+
+.flavors .more {
+    background-color: rgba(245, 214, 76, 0.877);
+}
+
+.flavors .more:hover {
+    background-color: rgba(245, 214, 76, 0.521);
 }
 
 .feedback {
@@ -245,7 +267,7 @@ h3 {
     flex-direction: column;
     gap: 2rem;
 
-    width: 50vw;
+    width: 45vw;
 }
 
 .request-areas {
@@ -323,21 +345,41 @@ h3 {
 
 
 
-footer {
+.footer {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
     width: 100%;
-    min-height: 150px;
+    height: max-content;
     background-image: linear-gradient(rgb(65, 62, 59) 0, rgb(58, 55, 51) 50%, rgb(14, 13, 12)100%);
     padding: 2rem;
 }
 
 .footer-text {
     align-self: center;
+    justify-self: center;
+    margin: auto;
+
+    font-size: clamp(2.3rem, 2vw, 3rem);
+    color: white;
+    text-align: center;
+
+    
+}
+
+.icons .fa-brands {
+    font-size: clamp(2.3rem, 2vw, 3rem);
 }
 
 .project-name {
+    position: absolute;
+    bottom: 10%;
+    font-size: clamp(0.4rem, 1.5vw, 1.3rem);
     color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1.3rem;
 }
 
 .top {

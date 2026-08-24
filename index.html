@@ -19,9 +19,9 @@
             <i class="fa-solid fa-bars"></i>
             <ul class="menu">
                 <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#produtos">Sabores</a></li>
+                <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#peca-ja">Peça já</a></li>
+                <li><a href="#peca-ja">Faça o seu pedido</a></li>
             </ul>
         </nav>
     </header>
@@ -84,14 +84,14 @@
     </section>
 
     <section class="flavors" id="produtos">
-        <h2>Nossas delícias</h2>
+        <h2>Nossos produtos</h2>
 
         <ul>
             <li>Pães</li>
             <li>Bolos</li>
             <li>Doces</li>
             <li>Esfirras</li>
-            <li>E muito mais</li>
+            <li class="more">E muito mais</li>
         </ul>
     </section>
 
@@ -121,7 +121,7 @@
                     <option value="Bolo de chocolate">Bolo de chocolate</option>
                     <option value="Bolo de milho">Bolo de milho</option>
                 </select>
-                <input type="number" placeholder="Quantidade de itens" class="request-amount request-section" min="1">
+                <input type="number" placeholder="Quantidade de itens" class="request-amount request-section" min="1" required>
             </div>
             
 
@@ -130,28 +130,28 @@
                 <fieldset class="request-payment request-section">
                     <input type="radio" name="forma-pagamento" id="dinheiro">
                     <label for="dinheiro">Dinheiro</label>
-                    <input type="radio" name="forma-pagamento" id="cartao">
+                    <input type="radio" name="forma-pagamento" id="cartao" >
                     <label for="cartao">Cartão</label>
                     <input type="radio" name="forma-pagamento" id="pix">
                     <label for="pix">PIX</label>
                 </fieldset>
                 <select name="forma-pagamento" class="choose-payment request-section">
-                    <option value="default" disabled selected>Selecione uma opção</option>
-                    <option value="Refrigerante">Dinheiro</option>
+                    <option value="default" selected disabled  >Selecione uma opção</option>
+                    <option value="Refrigerante" >Dinheiro</option>
                     <option value="Refrigerante">Cartão</option>
                     <option value="Refrigerante">PIX</option>
                 </select>
                 <h3>Bebida:</h3>
                 <fieldset class="request-extra request-section">
-                    <input type="radio" name="adicionais" id="refrigerante">
+                    <input type="radio" name="adicionais" id="refrigerante" >
                     <label for="borda-recheada">Refrigerante</label>
-                    <input type="radio" name="adicionais" id="suco">
+                    <input type="radio" name="adicionais" id="suco" >
                     <label for="bebida">Suco</label>
-                    <input type="radio" name="adicionais" id="agua-gas">
+                    <input type="radio" name="adicionais" id="agua-gas" >
                     <label for="agua-gas">Água com gás</label>
                 </fieldset>
-                <select name="adicionais" class="choose-drink request-section">
-                    <option value="default" disabled selected>Selecione uma opção</option>
+                <select name="adicionais" class="choose-drink request-section" >
+                    <option value="default" selected disabled >Selecione uma opção</option>
                     <option value="Refrigerante">Refrigerante</option>
                     <option value="Refrigerante">Suco</option>
                     <option value="Refrigerante">Água com gás</option>
@@ -163,15 +163,28 @@
         </form>
     </section>
 
-    <footer>
-            <a href="#hero" class="top">
-                <i class="fa-solid fa-caret-up"></i>
-            </a>
+    <footer class="footer">
+        <a href="#hero" class="top">
+            <i class="fa-solid fa-caret-up"></i>
+        </a>
+        <p class="project-name">Projeto - Oui Cozinha (TADS)</p>
         <div class="footer-text">
             <p>Siga-nos nas redes sociais</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/ouicozinha" target="_blank" rel="noreferrer" >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/ouicozinha" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-facebook">
+
+                    </i></a>
+                <a href="https://wa.me/+557192267308" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
             <p>&copy; 2026 Oui Cozinha</p>
         </div>
-        <p class="project-name">Projeto - Oui Cozinha (TADS)</p>
+        
     </footer>
 </body>
 </html>

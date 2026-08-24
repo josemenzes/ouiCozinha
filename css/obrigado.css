@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+nav .fa-solid {
+    display: none;
+}
+
+.feedback {
+    min-height: 80vh;
+}
+
+.feedback p {
+    text-align: center;
+    white-space: wrap;
+    line-height: 2.4rem;
+}
+
+.footer {
+    min-height: 20vh;
+}
+
+h2 {
+    margin-top: 14rem;
+}
