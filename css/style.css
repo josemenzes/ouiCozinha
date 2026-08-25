@@ -286,6 +286,12 @@ h3 {
     border-radius: 0.5rem;
 }
 
+select.request-section option {
+        font-size: clamp(0.4rem, 3vw, 1rem) ;
+        width: 40px !important;
+        padding: 0;
+    
+}
 
 
 .input-group {
@@ -310,11 +316,6 @@ h3 {
 .input-group label {
     margin-right: 2rem;
     font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-#form option {
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    
 }
 
 
@@ -412,8 +413,6 @@ h3 {
     color: rgba(255, 255, 255, 0.5);
     transform: translateY(-5px);
 }
-
-
 
 
 
