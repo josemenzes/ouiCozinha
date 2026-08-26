@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
+.fa-solid.fa-bars, .fa-solid.fa-circle-left {
+    color: white;
+    display: none;
+}
+
 @media (max-width: 768px) {
-    
     .menu {
         display: none;
     }
@@ -9,37 +13,36 @@
     header {
         padding: 2rem 2rem 2rem 5rem;
     }
-    
-    .choice, .flavors li {
-        width: 80vw;
-
-    }
 
     .fa-solid.fa-bars, .fa-solid.fa-circle-left {
-        font-size: 6rem;
+        font-size: 4rem;
         display: unset;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
-    .flavors, .choices-container {
-        padding: 4rem;
-
     }
 
     .top {
         width: 40px;
         height: 40px;
     }
+    
+}
 
-    .choices-grid {
+@media (max-width: 960px) {
+    .products, .choices-container {
+        padding: 4rem;
+
+    }
+
+    .products ul, .choices-grid {
         flex-direction: column;
+    }
+
+    .choice, .products li {
+        width: 80vw;
+
     }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1040px) {
     .request-payment.request-section {
         display: none;
     }
