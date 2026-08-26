@@ -1,7 +1,7 @@
 # Projeto Oui Cozinha
 Inspirado na loja de pães e bolos da minha mãe.
 
-# Descrição
+## Descrição
 - Busquei manter cores relacionadas tanto a marca da loja quanto aos produtos vendidos, me inspirando também na ideia do desafio;
 - Utilizei proporções diferentes na responsividade, utilizando valores fossem mais aplicáveis no meu projeto;
 - Ao reduzir o tamanho de tela, a navegação é substituída por um ícone ainda não funcional, porém na tela de confirmação de pedido é um link clicável.
