@@ -1,5 +1,5 @@
 # Projeto Oui Cozinha
-Inspirado na loja de pães e bolos da minha mãe
+Inspirado na loja de pães e bolos da minha mãe.
 
 # Descrição
 - Busquei manter cores relacionadas tanto a marca da loja quanto aos produtos vendidos, me inspirando também na ideia do desafio;
