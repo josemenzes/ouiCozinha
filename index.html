@@ -111,55 +111,55 @@
         <h2>Faça já o seu pedido!</h2>
         <form action="obrigado.html" method="get" target="self" id="form">
             <div class="request-areas">
-                <input type="text" placeholder="Nome completo" class="request-name request-section" required>
-                <input type="tel" placeholder="Telefone" class="request -tel request-section" required>
-                <input type="text" placeholder="Endereço de entrega" class="request-address request-section" required>
-                <select name="choose-food" id="choose-food" class="request-foods request-section" required>
-                    <option value="default" selected disabled>Selecione uma opção</option>
+                <input type="text" name="nomeCliente" placeholder="Nome completo" class="request-name request-section" id="req-name" required>
+                <input type="tel" name="telefoneCliente" placeholder="(12) 9 1234-5678" class="request-tel request-section" id="req-telephone" required pattern="[0-9]{2}9[0-9]{4}[0-9]{4}">
+                <input type="text" name="enderecoCliente" placeholder="Endereço de entrega" class="request-address request-section" id="req-address" required>
+                <select name="tipoMassa"  class="request-foods request-section" id="choose-food" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
                     <option value="Pão">Pão</option>
                     <option value="Esfirra">Esfirra</option>
                     <option value="Bolo de chocolate">Bolo de chocolate</option>
                     <option value="Bolo de milho">Bolo de milho</option>
                 </select>
-                <input type="number" placeholder="Quantidade de itens" class="request-amount request-section" min="1" required>
+                <input type="number" placeholder="Quantidade de itens" class="request-amount request-section" min="1" id="req-amount" required>
             </div>
             
 
             <div class="input-group">
                 <h3>Forma de pagamento:</h3>
-                <fieldset class="request-payment request-section">
-                    <input type="radio" name="forma-pagamento" id="dinheiro">
+                <fieldset class="request-payment request-section" id="pay-desktop">
+                    <input type="radio" name="forma-pagamento" id="dinheiro" required>
                     <label for="dinheiro">Dinheiro</label>
-                    <input type="radio" name="forma-pagamento" id="cartao" >
+                    <input type="radio" name="forma-pagamento" id="cartao" required>
                     <label for="cartao">Cartão</label>
-                    <input type="radio" name="forma-pagamento" id="pix">
+                    <input type="radio" name="forma-pagamento" id="pix" required>
                     <label for="pix">PIX</label>
                 </fieldset>
-                <select name="forma-pagamento" class="choose-payment request-section">
-                    <option value="default" selected disabled  >Selecione uma opção</option>
-                    <option value="Refrigerante" >Dinheiro</option>
-                    <option value="Refrigerante">Cartão</option>
-                    <option value="Refrigerante">PIX</option>
+                <select name="forma-pagamento" class="choose-payment request-section" id="pay-mobile" required disabled >
+                    <option value="" selected disabled  >Selecione uma opção</option>
+                    <option value="Dinheiro" >Dinheiro</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="PIX">PIX</option>
                 </select>
                 <h3>Bebida:</h3>
-                <fieldset class="request-extra request-section">
-                    <input type="radio" name="adicionais" id="refrigerante" >
+                <fieldset class="request-extra request-section" id="extra-desktop">
+                    <input type="radio" name="bebida" id="refrigerante" required>
                     <label for="borda-recheada">Refrigerante</label>
-                    <input type="radio" name="adicionais" id="suco" >
+                    <input type="radio" name="bebida" id="suco" required>
                     <label for="bebida">Suco</label>
-                    <input type="radio" name="adicionais" id="agua-gas" >
+                    <input type="radio" name="bebida" id="agua-gas" required>
                     <label for="agua-gas">Água com gás</label>
                 </fieldset>
-                <select name="adicionais" class="choose-drink request-section" >
-                    <option value="default" selected disabled >Selecione uma opção</option>
+                <select name="bebida" class="choose-drink request-section" id="extra-mobile" required disabled>
+                    <option value="" selected disabled >Selecione uma opção</option>
                     <option value="Refrigerante">Refrigerante</option>
-                    <option value="Refrigerante">Suco</option>
-                    <option value="Refrigerante">Água com gás</option>
+                    <option value="Suco">Suco</option>
+                    <option value="Água com gás">Água com gás</option>
                 </select>
                 
             </div>
 
-            <input type="submit" value="Enviar pedido" class="request-submit request-section">
+            <input type="submit" value="Enviar pedido" class="request-submit request-section" id="submit">
         </form>
     </section>
 
@@ -186,5 +186,7 @@
         </div>
         
     </footer>
+
+    <script src="js/form-validate.js"></script>
 </body>
 </html>
