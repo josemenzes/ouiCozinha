@@ -97,11 +97,13 @@
 
     <section class="feedback" id="depoimentos">
         <h2>O que nossos clientes dizem</h2>
-        <img src="assets/img/cliente1.png" alt="">
-        <p class="nome-cliente">Vitor Tiago</p>
-        <p>"Entrega super rápida, recomendo demais!"</p>
+        <div class="feedback-carousel" id="feedback-box">
+            <img src="assets/img/cliente1.webp" alt="" id="clientImg">
+            <p class="nome-cliente" id="clientName">Vitor Tiago</p>
+            <p id="clientMsg">"Entrega super rápida, recomendo demais!"</p>
+        </div>
         
-        <div class="buttons">
+        <div class="buttons" id="btns">
             <input type="button" name="previous" id="prev" value="Anterior">
             <input type="button" name="next" id="next" value="Próximo">
         </div>
@@ -187,6 +189,7 @@
         
     </footer>
 
-    <script src="js/form-validate.js"></script>
+    <script src="js/form-validate.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </body>
 </html>

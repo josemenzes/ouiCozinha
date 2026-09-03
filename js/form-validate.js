@@ -14,13 +14,6 @@ function responsivePayment() {
     payMobile.disabled = !isMobile;
     extraDesktop.disabled = isMobile;
     extraMobile.disabled = !isMobile;
-
-    console.log({
-        largura: window.innerWidth,
-        isMobile: isMobile,
-        desktopDisabled: payDesktop.disabled,
-        mobileDisabled: payMobile.disabled
-    })
 }
 
 responsivePayment();

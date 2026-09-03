@@ -20,6 +20,9 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+
+    overflow-x: hidden;
+
 }
 
 /* Cabeçalho da página*/
@@ -201,35 +204,53 @@ h3 {
 
 
 .feedback {
+    /* position: relative; */
     width: 100%;
     min-height: 350px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28rem;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right top, rgba(139, 139, 139, 0.486) 0, rgb(231, 229, 229) 50%, rgba(139, 139, 139, 0.486)100%);
     padding: 5rem;
 
     border-bottom: solid 4px rgba(109, 75, 3, 0.884);
-
     scroll-margin-top: 14rem;
 }
 
+.feedback-carousel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+    gap: 2rem;
 
-.feedback img {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.274);
-    border-radius: 50%;
+    transform: translateX(0);
+    opacity: 1;
+
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
 }
 
-.feedback p {
+
+.feedback-carousel img {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.274);
+    border-radius: 50%;
+    width: max-content;
+    inset: 0;
+}
+
+.feedback-carousel p {
     white-space: nowrap;
     font-size: clamp(1.4rem, 3vw, 2rem);
     line-height: 1;
+    /* align-self: center; */
 }
 
 
-.feedback .nome-cliente {
+.feedback-carousel .nome-cliente {
     background-color: rgba(243, 202, 114, 0.884);
     padding: 1rem 2rem;
     border-radius: 4rem;
