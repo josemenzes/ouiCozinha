@@ -15,13 +15,11 @@ function movimento() {
     feedback_box.style.transform = `translateX(${translateX}px)`;
     feedback_box.style.opacity = 0;
 
-    
-
     setTimeout( () => {
         feedback_box.style.transform = `translateX(${translateX * -1}px)`
         console.log(i);
         client_img.src = `assets/img/cliente${i}.webp`;
-    }, 700);
+    }, 800);
 
     setTimeout( () => {
         feedback_box.style.transform = posicaoInicial;
@@ -38,11 +36,11 @@ function movimento() {
         } else if (i == 3) {
 
         }
-    }, 1050);
+    }, 1200);
 }
 
 button_prev.addEventListener("click", () => {
-    translateX = -500;
+    translateX = -250;
 
     i = (i > 1) ? --i : 3;
     movimento()
@@ -50,7 +48,7 @@ button_prev.addEventListener("click", () => {
 });
 
 button_next.addEventListener("click", () => {
-    translateX = 500;
+    translateX = 250;
 
     i = (i < 3) ? ++i: 1;
     movimento()
