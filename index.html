@@ -15,9 +15,10 @@
 <body>
     <header>
         <a href="index.html"><img src="./assets/img/logo-oui.png" alt="logo-do-site"></a>
-        <nav>
-            <i class="fa-solid fa-bars"></i>
-            <ul class="menu">
+        <nav id="navbar">
+            <i class="fa-solid fa-bars" id="menu-button"></i>
+            <ul class="menu" id="side-bar">
+                <i class="fa-solid fa-circle-right" id="close-navbar"></i>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
@@ -114,7 +115,7 @@
         <form action="obrigado.html" method="get" target="self" id="form">
             <div class="request-areas">
                 <input type="text" name="nomeCliente" placeholder="Nome completo" class="request-name request-section" id="req-name" required>
-                <input type="tel" name="telefoneCliente" placeholder="(12) 9 1234-5678" class="request-tel request-section" id="req-telephone" required pattern="[0-9]{2}9[0-9]{4}[0-9]{4}">
+                <input type="tel" name="telefoneCliente" placeholder="(12) 91234-5678" class="request-tel request-section" id="req-telephone" required pattern="[0-9]{2}9[0-9]{4}[0-9]{4}">
                 <input type="text" name="enderecoCliente" placeholder="Endereço de entrega" class="request-address request-section" id="req-address" required>
                 <select name="tipoMassa"  class="request-foods request-section" id="choose-food" required>
                     <option value="" selected disabled>Selecione uma opção</option>
@@ -191,5 +192,6 @@
 
     <script src="js/form-validate.js" defer></script>
     <script src="js/carousel.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

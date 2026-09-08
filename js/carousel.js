@@ -2,7 +2,6 @@ const feedback_box = document.getElementById('feedback-box');
 const client_img = document.getElementById('clientImg');
 const client_name = document.getElementById('clientName');
 const client_msg = document.getElementById('clientMsg');
-const buttons = document.getElementById('btns');
 const button_prev = document.getElementById('prev');
 const button_next = document.getElementById('next');
 
@@ -17,18 +16,27 @@ function movimento() {
 
     setTimeout( () => {
         feedback_box.style.transform = `translateX(${translateX * -1}px)`
-        console.log(i);
         client_img.src = `assets/img/cliente${i}.webp`;
-    }, 800);
+    }, 600);
 
     setTimeout( () => {
         feedback_box.style.transform = posicaoInicial;
         feedback_box.style.opacity = 1;
 
         switch (i) {
-            case 1: client_name.innerHTML = "Vitor Tiago"; break;
-            case 2: client_name.innerHTML = "Maria Clara"; break;
-            case 3: client_name.innerHTML = "Juliane de Souza";
+            case 1: {
+                client_msg.innerHTML = "\"Entrega super rápida, recomendo demais!\"";
+                client_name.innerHTML = "Vitor Tiago"; break;
+            } 
+            case 2: {
+                client_msg.innerHTML = "\"Lanches maravilhosos e entrega no prazo!\"";
+                client_name.innerHTML = "Maria Clara"; break;
+
+            }
+            case 3: {
+                client_name.innerHTML = "Juliane de Souza";
+                client_msg.innerHTML = "\"Melhores bolos que eu já comi!\"";
+            }
 
         }
         if (i == 2) {
@@ -36,7 +44,7 @@ function movimento() {
         } else if (i == 3) {
 
         }
-    }, 1200);
+    }, 880);
 }
 
 button_prev.addEventListener("click", () => {

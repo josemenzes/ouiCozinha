@@ -1,14 +1,32 @@
 @charset "UTF-8";
 
-.fa-solid.fa-bars, .fa-solid.fa-circle-left {
+
+.fa-solid.fa-bars, .fa-solid.fa-circle-left, #close-navbar {
     color: white;
     display: none;
 }
 
 @media (max-width: 768px) {
     .menu {
-        display: none;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        right: -200px;
     }
+
+    #close-navbar {
+        display: unset;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        font-size: 3rem;
+        border-radius: 2rem 0 0 2rem;
+        right: 100%;
+        top: 0;
+        background-color: black;
+        padding: 2rem 4rem 2rem 2rem;
+    }
+
 
     header {
         padding: 2rem 2rem 2rem 5rem;
