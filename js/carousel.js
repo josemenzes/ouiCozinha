@@ -7,29 +7,42 @@ const button_next = document.getElementById('next');
 
 let i = 1;
 
-const clientes = {
-    1: {
-        nome: 'Vitor Tiago',
-        mensagem: '"Entrega super rápida, recomendo demais!"'
-    },
+function movimento() {
 
-    2: {
-        nome: 'Maria Clara',
-        mensagem: '"Lanches maravilhosos e entrega no prazo!"'
-    },
+    feedback_box.style.transform = `translateX(${translateX}px)`;
+    feedback_box.style.opacity = 0;
 
-    3: {
-        nome: 'Juliane de Souza',
-        mensagem: '"Melhores bolos que eu já comi!"'
-    }
-};
+    setTimeout( () => {
+        feedback_box.style.transform = `translateX(${translateX * -1}px)`
+        client_img.src = `assets/img/cliente${i}.webp`;
+    }, 600);
 
-function atualizarCliente() {
+    setTimeout( () => {
+        feedback_box.style.transform = posicaoInicial;
+        feedback_box.style.opacity = 1;
 
-    client_img.src = `assets/img/cliente${i}.webp`;
-    client_name.textContent = clientes[i].nome;
-    client_msg.textContent = clientes[i].mensagem;
+        switch (i) {
+            case 1: {
+                client_msg.innerHTML = "\"Entrega super rápida, recomendo demais!\"";
+                client_name.innerHTML = "Vitor Tiago"; break;
+            } 
+            case 2: {
+                client_msg.innerHTML = "\"Lanches maravilhosos e entrega no prazo!\"";
+                client_name.innerHTML = "Maria Clara"; break;
 
+            }
+            case 3: {
+                client_name.innerHTML = "Juliane de Souza";
+                client_msg.innerHTML = "\"Melhores bolos que eu já comi!\"";
+            }
+
+        }
+        if (i == 2) {
+        
+        } else if (i == 3) {
+
+        }
+    }, 880);
 }
 
 button_prev.addEventListener('click', () => {
