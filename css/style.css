@@ -204,7 +204,7 @@ h3 {
 
 
 .feedback {
-    /* position: relative; */
+    position: relative; 
     width: 100%;
     min-height: 350px;
     display: flex;
