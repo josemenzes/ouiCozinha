@@ -6,8 +6,21 @@ const lista = document.querySelectorAll('#side-bar li');
 
 let navBarFechada = false;
 
+const estadoOriginal = {
+    sidebar: sideBar.getAttribute('style'),
+    navbar: navbar.getAttribute('style'),
+    menuButton: menuButton.getAttribute('style')
+};
+
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 760){
+        sideBar.setAttribute('style', estadoOriginal.sidebar || ''),
+        navbar.setAttribute('style', estadoOriginal.navbar || ''),  
+        menuButton.setAttribute('style', estadoOriginal.menuButton || '')
+    }
+})
+
 function fecharNavBar() {
-    
     if (window.innerWidth <= 760){
 
         if (navBarFechada) return;
@@ -33,13 +46,12 @@ menuButton.addEventListener("click", () => {
     menuButton.style.transition = 'visibility 0.3s ease-in-out, opacity 0.5s ease-in-out'
 
 
-    sideBar.style.display = 'flex';
     sideBar.style.visibility = 'visible';
     sideBar.style.opacity = '1';
+    sideBar.style.position = 'absolute';
 
     sideBar.style.flexDirection = 'column';
     sideBar.style.padding = '2rem';
-    sideBar.style.position = 'absolute';
     sideBar.style.top = 0;
     sideBar.style.right = 0;
     sideBar.style.width = "50vw";

@@ -17,7 +17,7 @@ function movimento() {
     setTimeout( () => {
         feedback_box.style.transform = `translateX(${translateX * -1}px)`
         client_img.src = `assets/img/cliente${i}.webp`;
-    }, 600);
+    }, 340);
 
     setTimeout( () => {
         feedback_box.style.transform = posicaoInicial;
@@ -44,7 +44,7 @@ function movimento() {
         } else if (i == 3) {
 
         }
-    }, 880);
+    }, 640);
 }
 
 button_prev.addEventListener("click", () => {
