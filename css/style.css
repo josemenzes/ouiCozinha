@@ -204,7 +204,7 @@ h3 {
 
 
 .feedback {
-    /* position: relative; */
+    position: relative;
     width: 100%;
     min-height: 350px;
     display: flex;
@@ -238,7 +238,9 @@ h3 {
 .feedback-carousel img {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.274);
     border-radius: 50%;
-    width: max-content;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     inset: 0;
 }
 
@@ -271,6 +273,7 @@ h3 {
     padding: 1rem 2rem;
     border-radius: 2rem;
 }
+
 
 .buttons input:hover {
     background-color: rgb(83, 83, 83);
